@@ -58,7 +58,7 @@ Incase of Stereo Setup, Depth estimation is dependent on disparity map.
     ...
     ```
 
-- Download Yolo for object detection.I shared it at [Download Link](https://drive.google.com/file/d/1PGqoHTNinGGVTIp-b5KtGBnMTJcgx1Sx/view?usp=sharing).
+- Download YOLOv8 for object detection: from ultralytics import YOLO 
 
 ## Setting up DataSet
 Download Kitti Dataset from [Download Link](https://www.cvlibs.net/datasets/kitti/eval_scene_flow.php?benchmark=stereo)
