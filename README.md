@@ -46,14 +46,6 @@ Incase of Stereo Setup, Depth estimation is dependent on disparity map.
 - YOLOv8 (For object Detection)
 - Tensorflow
 
-
-Incase of Stereo Setup, Depth estimation is dependent on disparity map.
-![disparity drawio](https://user-images.githubusercontent.com/22910010/221393481-38847a4e-3c24-4daf-a803-e948051be575.png)
-
-[PointCloud Output]
-
-https://user-images.githubusercontent.com/22910010/220879862-f2a86b14-b30f-4f8a-9f2e-7fa07fc96d15.mp4
-
 ## Dependency
 
 - Download Pre-Trained model which i shared at [Download Link](https://drive.google.com/file/d/1dBqxyEQm2g0bfUgWlTBNMo4opFtffedz/view?usp=sharing)
