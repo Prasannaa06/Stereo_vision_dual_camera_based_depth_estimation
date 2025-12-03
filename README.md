@@ -127,6 +127,8 @@ Here is the inference time on Nvidia-2080Ti
 - https://github.com/JiaRenChang/PSMNet.
 - https://github.com/The-Learning-And-Vision-Atelier-LAVA/PAM/tree/master/PASMnet.
 
+## Go through my research paper which you can download at [Link](https://drive.google.com/file/d/13uSKv3DlsQFdqrkCkVLSSmLkaZs5PrNJ/view?usp=sharing)
+
 ## Sample Output 
 https://user-images.githubusercontent.com/22910010/221394203-adbb3581-5e6c-4edc-bfee-6f2469990896.mp4
 
@@ -141,7 +143,7 @@ Full Video output is shared in YouTube [Link](https://youtu.be/cIse_5QOXx0?si=bj
 ---
 Reach me @
 
-[LinkedIn](https://www.linkedin.com/in/satya1507/) [GitHub](https://github.com/satya15july) [Medium](https://medium.com/@satya15july_11937)
+[LinkedIn](https://www.linkedin.com/in/sri-laxmi-prasanna-113a8225a) [GitHub](https://github.com/Prasanna06) [Mail](bslprasanna2005@gmail.com)
 
 
 
