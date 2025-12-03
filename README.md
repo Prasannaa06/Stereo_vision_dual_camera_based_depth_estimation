@@ -1,13 +1,51 @@
 # Depth Estimation From Stereo Images
 
 ## Introduction:
-https://user-images.githubusercontent.com/22910010/221394203-adbb3581-5e6c-4edc-bfee-6f2469990896.mp4
+This project implements a stereo-vision-based depth estimation system using two cameras placed at a fixed baseline distance. The system captures synchronized left–right images, computes disparity, and generates a depth map that can be used for robotics, autonomous driving, obstacle detection, and 3D scene understanding.
 
-(Note: Upper part is Disparity Map and bottom part is Object detection + Depth Estimation(z=?))
+## Features:
+- Uses two calibrated cameras for stereo image capture
+- Performs camera calibration and image rectification
+- Computes disparity maps using StereoBM / StereoSGBM
+- Generates accurate depth estimation through triangulation
+- Visualizes disparity and depth maps
+- Easy-to-run Python scripts
 
-Please check my [Medium Blog](https://medium.com/@satya15july_11937/depth-estimation-from-stereo-images-using-deep-learning-314952b8eaf9) for more information
+## 🧠 How It Works
 
-Full Video output is shared at [Link](https://drive.google.com/file/d/1biTFslu7mCiLQTtq84wc5B8CTaJsWlrA/view?usp=sharing)
+Stereo vision relies on identifying corresponding points in the left and right camera images.  
+The shift between these points is known as **disparity**.
+
+Depth is computed using:
+
+$$
+Depth = \frac{f \times B}{d}
+$$
+
+Where:  
+- \( f \) = focal length  
+- \( B \) = baseline distance between the two cameras  
+- \( d \) = disparity
+
+Incase of Stereo Setup, Depth estimation is dependent on disparity map.
+![disparity drawio](https://user-images.githubusercontent.com/22910010/221393481-38847a4e-3c24-4daf-a803-e948051be575.png)
+
+**Processing Pipeline:**
+1. **Capture synchronized images** from two cameras  
+2. **Calibrate cameras** to obtain intrinsic & extrinsic parameters  
+3. **Undistort & rectify** images  
+4. **Compute disparity map**  
+5. **Convert disparity → depth map**  
+6. **Visualize & analyze depth**  
+
+## Technologies and Libraries Used:
+- Python
+- OpenCV
+- NumPy
+- Matplotlib
+- YOLOv8 (For object Detection)
+- Tensorflow
+
 
 Incase of Stereo Setup, Depth estimation is dependent on disparity map.
 ![disparity drawio](https://user-images.githubusercontent.com/22910010/221393481-38847a4e-3c24-4daf-a803-e948051be575.png)
@@ -96,6 +134,17 @@ Here is the inference time on Nvidia-2080Ti
 - https://github.com/xy-guo/GwcNet.
 - https://github.com/JiaRenChang/PSMNet.
 - https://github.com/The-Learning-And-Vision-Atelier-LAVA/PAM/tree/master/PASMnet.
+
+## Sample Output 
+https://user-images.githubusercontent.com/22910010/221394203-adbb3581-5e6c-4edc-bfee-6f2469990896.mp4
+
+(Note: Upper part is Disparity Map and bottom part is Object detection + Depth Estimation(z=?))
+
+[PointCloud Output]
+
+https://user-images.githubusercontent.com/22910010/220879862-f2a86b14-b30f-4f8a-9f2e-7fa07fc96d15.mp4
+
+Full Video output is shared in YouTube [Link](https://youtu.be/cIse_5QOXx0?si=bjypo7xS2SbHLIsF)
 
 ---
 Reach me @
